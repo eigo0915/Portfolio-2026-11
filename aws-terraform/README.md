@@ -57,7 +57,7 @@ terraform plan
 実リソースの課金を抑えるため常時稼働（`apply`）は行わず、`terraform validate` および `terraform plan` にて全 14 リソースの計画がエラーなく生成されることを確認しています。
 
 <details>
-<summary>▶ terraform plan の実行ログを表示する（14 to add, 0 to change, 0 to destroy）</summary>
+<summary>▶ terraform plan の実行ログを表示する（16 to add, 0 to change, 0 to destroy）</summary>
 
 ```terraform
 
