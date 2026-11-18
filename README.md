@@ -23,7 +23,7 @@
 | 対象クラウド | ディレクトリ | ステータス | 仮想ネットワーク | 管理接続（踏み台） | アウトバウンド | 仮想マシン (RHEL 9) |
 | :--- | :--- | :---: | :--- | :--- | :--- | :--- |
 | **Microsoft Azure** | [`./azure-terraform`](./azure-terraform) | ✅ 完了 | VNet (`10.0.0.0/16`) | Azure Bastion | NAT Gateway | Linux VM (`Standard_B1s`) |
-| **Amazon Web Services** | `./aws-terraform` | 🚧 作成予定 | VPC (`10.0.0.0/16`) | AWS Systems Manager | NAT Gateway | EC2 (`t3.micro`) |
+| **Amazon Web Services** | `./aws-terraform` | ✅ 完了 | VPC (`10.0.0.0/16`) | AWS Systems Manager | NAT Gateway | EC2 (`t3.micro`) |
 | **Oracle Cloud (OCI)** | `./oci-terraform` | 🚧 作成予定 | VCN (`10.0.0.0/16`) | OCI Bastion | NAT Gateway | Compute (`VM.Standard.E2.1.Micro`) |
 
 ---
@@ -44,7 +44,15 @@ Portfolio/
 │   ├── compute.tf
 │   ├── bastion.tf
 │   └── terraform_plan.log
-├── aws-terraform/             # 【予定】AWS 構築コード
+├── aws-terraform/             # 【完了】AWS 構築コード
+│   ├── README.md              # AWSの構成詳細・plan ログ
+│   ├── versions.tf
+│   ├── variables.tf
+│   ├── network.tf
+│   ├── security.tf
+│   ├── compute.tf
+│   ├── iam.tf
+│   └── terraform_plan.log
 └── oci-terraform/             # 【予定】OCI 構築コード
 ```
 
