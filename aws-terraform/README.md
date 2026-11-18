@@ -9,7 +9,7 @@ Terraform を使用して、AWS 上に VPC ネットワークおよび RHEL 9 �
 
 ![AWS Architecture](./images/AWS.png)
 
-### 定義しているリソース（計 14 リソース）
+### 定義しているリソース（計 16 リソース）
 * **VPC**: `vpc_IaC` (`10.0.0.0/16`)
 * **Subnets**:
   * パブリックサブネット: `subnet-public_IaC` (`10.0.0.0/24` / NAT Gateway 配置用)
@@ -48,6 +48,7 @@ terraform init
 terraform fmt -check
 terraform validate
 terraform plan
+```
 
 ---
 
