@@ -6,7 +6,7 @@ Terraform を使用して、Azure 上に仮想ネットワークおよび RHEL 9
 
 ## 1. 構成図
 
-![Azure Architecture](./images/architecture.png)
+![Azure Architecture](./images/Azure.png)
 
 ### 定義しているリソース（計 14 リソース）
 * **Resource Group**: `TestGroup_IaC` (`japaneast`)
@@ -34,7 +34,7 @@ Terraform を使用して、Azure 上に仮想ネットワークおよび RHEL 9
 ### 前提条件
 * Terraform `>= 1.1.0`
 * Azure CLI
-* SSH 公開鍵 (`~/.ssh/id_rsa_common.pub`) の配置
+* SSH 公開鍵 (`~/.ssh/id_rsa.pub`) の配置
 
 ### 実行コマンド
 ```bash
